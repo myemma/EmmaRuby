@@ -1,0 +1,4 @@
+.DS_Store
+emmapi-*
+test/fixtures/vcr_cassettes/*
+pkg/*
