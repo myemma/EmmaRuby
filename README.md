@@ -1,7 +1,7 @@
 ## Emma API Wrapper (Ruby)
 A Ruby wrapper for Emma's API.
 
-## Running the tests [![Build Status](https://travis-ci.org/myemma/emma-wrapper-ruby.png)](https://travis-ci.org/myemma/emma-wrapper-ruby)
+## Running the tests [![Build Status](https://travis-ci.org/myemma/EmmaRuby.png)](https://travis-ci.org/myemma/EmmaRuby)
 Set the following environment values
 
 ```bash
