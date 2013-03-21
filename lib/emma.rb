@@ -1,6 +1,6 @@
-require "Emma/version"
-require "Emma/client"
-require "Emma/configurable"
+require "emma/version"
+require "emma/client"
+require "emma/configurable"
 
 module Emma
   class << self
