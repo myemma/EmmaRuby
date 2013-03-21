@@ -20,7 +20,7 @@ bundle exec rake run_tests
 
 Add this line to your application's Gemfile:
 
-    gem 'Emma'
+    gem 'emma'
 
 And then execute:
 
@@ -28,13 +28,13 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install Emma
+    $ gem install emma
 
 ## Usage
 
 ## Instantiation
 ```ruby
-require 'Emma'
+require 'emma'
 em = Emma::Setup.new 'account_id', 'public_key', 'private_key', 'debug_true_or_false'
 ```
 

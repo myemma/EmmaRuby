@@ -1,14 +1,14 @@
 require 'json'
 require 'httparty'
-require 'Emma/configurable'
-require 'Emma/api/members'
-require 'Emma/api/fields'
-require 'Emma/api/groups'
-require 'Emma/api/mailings'
-require 'Emma/api/response'
-require 'Emma/api/searches'
-require 'Emma/api/triggers'
-require 'Emma/api/webhooks'
+require 'emma/configurable'
+require 'emma/api/members'
+require 'emma/api/fields'
+require 'emma/api/groups'
+require 'emma/api/mailings'
+require 'emma/api/response'
+require 'emma/api/searches'
+require 'emma/api/triggers'
+require 'emma/api/webhooks'
 
 
 module Emma
