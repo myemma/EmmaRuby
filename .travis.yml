@@ -6,16 +6,16 @@ rvm:
 script:
 - bundle exec rake run_tests
 env:
-  matrix:
+  global:
   - secure: |-
-      eD+cyhOTU98e2NhGqcZdzsNpo6chupKs1cFa2WODfmCr9wxyX95025BWoCKJ
-      dox8KK2uVGZJOr8a48tp4cnDM0ccHZF4k8uyCKq8nNe/C97outZQXDv/7dXU
-      EiLshkDXaWnXFAEuLP523RnAbXerQVPcglEnvPnaB94qxlkZvPM=
+      UgkY7PDsbBfq3Ukyzb6VIWXY6zd7s8bJMLOkkQ7RK7huwl68jfeYSpLwJ6Rm
+      2qVaYj84YDmSwr6ed6Fk2C+1IviqlN4NkJ0c9JtibHHOVOxBB8Y+dm17DFPp
+      jsIOOUB/NduVNOlIKMCwCiXFEPBTwhiWLFGEkE4HHLk3HnxHaj8=
   - secure: |-
-      HoPDcCw6TP0JiFmyDd1g9ggQMX08c06RFT8uPRr5JE/ow8WpzKXdEmjiAmyb
-      99UrXqoa00GWn+IAX41UrvuGZqIUGXaE4jEW/R0rBLnwq9rH9e929vKxBe67
-      kkM9GH4fttZ3e92Hf/M/WMbCZ+y0gl+mFK25TFohlmwoHStW1xc=
+      agxJsFr30M/dvbj2+tqBHmklouxk8+PRO+DBJOEWdGBxjJVis0kcDsFCp3sa
+      V0TqnS/+7ExVOjez4b6r9NSNrBmxhQuVYEr1Wsk96CE1B16Y1XsCImvIooxl
+      KPJWYy2szbex7i8ibCkA7w0Yvb8QhmHMLAa3aVtteEOAGULyCr4=
   - secure: |-
-      JM4vM7uaXKsDm/zLeoStDTeljBmgXFXYSa7Z6mliGqu+XNOnZlCDOATDrjGK
-      29N4wSqnzImXIV6IYKb0u8U8hGmQLJheyXG+TaQt7om0hEvTf1+PCApC/nka
-      3qXf7jpczKQkT5bQwKorDBf4j1i5eGj79nQmEX9cXaxoY9vIal0=
+      jqHIRzqNXdFT/QIksVfMYFSHAiFKOY16hNjyWQr8g7g/DuFAIdjO7zhCqK7H
+      bDQ0RDqw84MNnrCFdctvxE6n4nHO3guM4BYLSAENflXVAugzlve5BTFRZfbz
+      qJ5cboa3VSwZeks/PYoIIwbaFCpVlMulEMRgKl0YjDs/y9RhcYo=
