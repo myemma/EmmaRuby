@@ -1,6 +1,21 @@
+---
 language: ruby
 rvm:
-  - 1.9.2
-  - 1.9.3
-script: 
-    - bundle exec rake run_tests
+- 1.9.2
+- 1.9.3
+script:
+- bundle exec rake run_tests
+env:
+  matrix:
+  - secure: |-
+      eD+cyhOTU98e2NhGqcZdzsNpo6chupKs1cFa2WODfmCr9wxyX95025BWoCKJ
+      dox8KK2uVGZJOr8a48tp4cnDM0ccHZF4k8uyCKq8nNe/C97outZQXDv/7dXU
+      EiLshkDXaWnXFAEuLP523RnAbXerQVPcglEnvPnaB94qxlkZvPM=
+  - secure: |-
+      HoPDcCw6TP0JiFmyDd1g9ggQMX08c06RFT8uPRr5JE/ow8WpzKXdEmjiAmyb
+      99UrXqoa00GWn+IAX41UrvuGZqIUGXaE4jEW/R0rBLnwq9rH9e929vKxBe67
+      kkM9GH4fttZ3e92Hf/M/WMbCZ+y0gl+mFK25TFohlmwoHStW1xc=
+  - secure: |-
+      JM4vM7uaXKsDm/zLeoStDTeljBmgXFXYSa7Z6mliGqu+XNOnZlCDOATDrjGK
+      29N4wSqnzImXIV6IYKb0u8U8hGmQLJheyXG+TaQt7om0hEvTf1+PCApC/nka
+      3qXf7jpczKQkT5bQwKorDBf4j1i5eGj79nQmEX9cXaxoY9vIal0=
