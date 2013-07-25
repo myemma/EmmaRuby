@@ -28,7 +28,7 @@ module Emma
     end
     
     def respond_to_missing?(method, include_private = false)
-      client.respond_to?(client, include_private)
+      client.respond_to?(method, include_private)
     end
     
     private
