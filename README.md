@@ -18,9 +18,9 @@ bundle exec rake run_tests
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile (N.B. be sure to specify the myemma GitHub repo):
 
-    gem 'emma'
+    gem 'emma', :github => 'myemma/EmmaRuby'
 
 And then execute:
 
@@ -35,7 +35,7 @@ Or install it yourself as:
 ## Instantiation
 ```ruby
 require 'emma'
-em = Emma::Setup.new 'account_id', 'public_key', 'private_key', 'debug_true_or_false'
+em = Emma::Client.new 'account_id', 'public_key', 'private_key', 'debug_true_or_false'
 ```
 
 You can also set environment variables and the Emma Wrapper will use them when you create an instance
@@ -43,7 +43,7 @@ You can also set environment variables and the Emma Wrapper will use them when y
 ENV['EMMA_ACCOUNT_ID'] = 'account_id'
 ENV['EMMA_PUBLIC_KEY'] = 'public_key'
 ENV['EMMA_PRIVATE_KEY'] = 'private_key'
-em = Emma::Setup.new
+em = Emma::Client.new
 ```
 
 ## GET Request
