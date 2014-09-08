@@ -35,14 +35,23 @@ Or install it yourself as:
 ## Instantiation
 ```ruby
 require 'emma'
-em = Emma::Setup.new 'account_id', 'public_key', 'private_key', 'debug_true_or_false'
+em = Emma::Setup.new 'account_id', 'public_key', 'private_key', nil, 'debug_true_or_false'
 ```
 
-You can also set environment variables and the Emma Wrapper will use them when you create an instance
+or
+
+```ruby
+require 'emma'
+em = Emma::Setup.new 'account_id', nil, nil, 'oauth_token', 'debug_true_or_false'
+```
+
+You can also set environment variables and the Emma Wrapper will use them when you create an instance.
+The client will utilize the OAuth token for authentication if present and fall back to public_key + private_key
 ```ruby
 ENV['EMMA_ACCOUNT_ID'] = 'account_id'
 ENV['EMMA_PUBLIC_KEY'] = 'public_key'
 ENV['EMMA_PRIVATE_KEY'] = 'private_key'
+ENV['EMMA_OAUTH_TOKEN'] = 'oauth_token'
 em = Emma::Setup.new
 ```
 

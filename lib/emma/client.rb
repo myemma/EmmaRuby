@@ -27,14 +27,19 @@ module Emma
     
     base_uri "https://api.e2ma.net"
     
-    attr_accessor :account_id, :private_key, :public_key
+    attr_accessor :account_id, :private_key, :public_key, :oauth_token
     
     # On insantiation set instance variables into memory
     def initialize(options = {})
       Emma::Configurable.keys.each do |key|
         instance_variable_set(:"@#{key}", options[key] || Emma.instance_variable_get(:"@#{key}"))
       end
-      @default_params = {:basic_auth => {:username => @public_key, :password => @private_key}}
+
+      if @oauth_token.present?
+        @default_params = {:headers => { "Authorization" => "Bearer #{@oauth_token}" }}
+      else
+        @default_params = {:basic_auth => {:username => @public_key, :password => @private_key}}
+      end
     end
     
     # HTTP GET Request
