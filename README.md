@@ -20,7 +20,7 @@ bundle exec rake run_tests
 
 Add this line to your application's Gemfile:
 
-    gem 'emma'
+    gem 'emma', :github => "myemma/EmmaRuby"
 
 And then execute:
 
