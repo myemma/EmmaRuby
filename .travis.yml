@@ -1,8 +1,7 @@
 ---
 language: ruby
 rvm:
-- 1.9.2
-- 1.9.3
+- 2.3.3
 script:
 - bundle exec rake run_tests
 env:
