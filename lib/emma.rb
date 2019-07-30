@@ -12,12 +12,13 @@ module Emma
   class Setup
     include Emma::Configurable
     
-    attr_accessor :account_id, :public_key, :private_key, :debug
+    attr_accessor :account_id, :public_key, :private_key, :oauth_token, :debug
     
-    def initialize(account_id = nil, public_key = nil, private_key = nil, debug = false)
+    def initialize(account_id = nil, public_key = nil, private_key = nil, oauth_token = nil, debug = false)
       @account_id = account_id || ENV['EMMA_ACCOUNT_ID']
       @public_key = public_key || ENV['EMMA_PUBLIC_KEY']
       @private_key = private_key || ENV['EMMA_PRIVATE_KEY']
+      @oauth_token = oauth_token || ENV['EMMA_OAUTH_TOKEN']
       @debug = debug
     end
     

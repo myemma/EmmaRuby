@@ -7,6 +7,7 @@ module Emma
             :account_id,
             :public_key,
             :private_key,
+            :oauth_token,
             :debug
           ]
       end
