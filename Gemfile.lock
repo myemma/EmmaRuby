@@ -20,7 +20,7 @@ GEM
     json (1.7.6)
     multi_json (1.5.0)
     multi_xml (0.5.2)
-    rake (10.0.3)
+    rake (13.0.1)
     shoulda (3.3.2)
       shoulda-context (~> 1.0.1)
       shoulda-matchers (~> 1.4.1)
